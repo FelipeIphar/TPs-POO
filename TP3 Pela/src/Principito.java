@@ -1,3 +1,4 @@
+package src;
 public class Principito {
     private String actitud;
     private String personalidad;
