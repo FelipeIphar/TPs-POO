@@ -11,11 +11,11 @@ public class App {
         Principito principito = new Principito("dedicado", "explorador");
 
         // Imprimir el texto literario utilizando los atributos de la flor literaria
-        System.out.println("El " + principito.getActitud() + "tenía una flor que amaba mucho. " +
+        System.out.println("El " + principito.getActitud() + " tenía una flor que amaba mucho. " +
                 "Cuidaba de ella todos los días, la regaba y le quitaba las orugas. " +
                 "La flor, aunque un poco " + florLiteraria.getActitud() + 
                 ", era muy " + florLiteraria.getApariencia() + 
-                " y agradecía al " + principito.getPersonalidad() + "por su dedicación. Un día, el principito decidió " +
+                " y agradecía al " + principito.getPersonalidad() + " por su dedicación. Un día, el principito decidió " +
                 "explorar otros planetas y, aunque no quería dejar sola a su flor, sabía que " +
                 "debía continuar su viaje para aprender más sobre el universo.");
 
