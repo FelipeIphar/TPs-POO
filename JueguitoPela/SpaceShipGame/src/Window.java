@@ -1,19 +1,23 @@
+package main; 
 import java.nio.Buffer;
-
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
 import javax.swing.JFrame;
 
-public class Window extends JFrame {
+public class Window extends JFrame implements Runnable{
 
     public static final int WIDTH = 800, HEIGHT = 600; //Definimos el tamaño de la ventana de juego
     private Canvas canvas; //Este lo utilizaremos para colofar formas y dibujos
     private Thread thread;
-    private boolean  running = false;
+    private boolean running = false;
 
     private BufferStrategy bs;
     private Graphics g;
 
     public Window()
-    {
+     {
         setTitle("Space Ship Game");
         setSize(WIDTH, HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Se cierra cuando toquemos la cruz
@@ -23,9 +27,9 @@ public class Window extends JFrame {
 
         canvas = new Canvas(); 
 
-        canvas.setPreferredSize(new Dimension(WIDTH, HEIGTH));
-        canvas.setMaximumSize(new Dimension(WIDTH, HEIGTH));
-        canvas.setMinimumSize(new Dimension(WIDTH, HEIGTH));
+        canvas.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        canvas.setMaximumSize(new Dimension(WIDTH, HEIGHT));
+        canvas.setMinimumSize(new Dimension(WIDTH, HEIGHT));
         canvas.setFocusable(true);
 
         add(canvas);
@@ -34,7 +38,6 @@ public class Window extends JFrame {
     public static void main(String[] args) {
          new Window().start();
     }
-}
 
 private void update() {
 
@@ -51,7 +54,7 @@ private void draw() {
 
     //Comienza a dibujar
     //---------------------------
-
+    g.drawRect(0, 0, 100, 100);
     //---------------------------
     //Termina de dibujar
     g.dispose();
@@ -67,7 +70,7 @@ public void run() {
 
     }
 
-    stop()
+    stop();
 }
 
 private void start() {
@@ -77,13 +80,13 @@ private void start() {
 
 }
 
-private voit stop() {
+private void stop() {
     try {
         thread.join();
         running = false;
-    }   catch (InterruptedException e) {
+    }   
+    catch (InterruptedException e) {
         e.printStackTrace();
     }
-    
-
+    }
 }
