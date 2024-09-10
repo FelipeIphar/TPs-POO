@@ -1,3 +1,4 @@
+package src;
 public class Flor {
     private String actitud;
     private String apariencia;
