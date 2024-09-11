@@ -1,6 +1,7 @@
 public class Principito {
     private String actitud;
     private String personalidad;
+    private Flor florDePrin;
 
     //Getters
     public String getActitud () {
@@ -8,6 +9,9 @@ public class Principito {
     }
     public String getPersonalidad () {
         return personalidad;
+    }
+    public Flor getFlor () {
+        return florDePrin;
     }
 
     //Setters
@@ -17,14 +21,18 @@ public class Principito {
     public void setPersonalidad (String newPersonalidad) {
         this.personalidad = newPersonalidad;
     }
-
+    public void setFlor (Flor newFlor) {
+        this.florDePrin = newFlor;
+    }
 
     
     public Principito () {}
 
-    public Principito (String act, String perso) {
+    public Principito (String act, String perso, Flor florPrin) {
         setActitud(act);
         setPersonalidad(perso);
+        setFlor(florPrin);
+
     }
     
 }
