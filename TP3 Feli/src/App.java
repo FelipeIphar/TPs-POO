@@ -1,21 +1,21 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Flor florTexto = new Flor("vanidosa", "hermosa");
-        Flor florMia  = new Flor("generosa", "delicada");
+        Flor florMia  = new Flor("temerosa", "delicada");
+        Flor florPrincipito = new Flor("vanidosa", "hermosa");
+        Principito principito = new Principito ("Dedicado", "Explorador", florPrincipito);
         
-        Principito princTexto = new Principito ("Dedicado", "Explorador");
-        Principito princMio = new Principito ("Atento", "Calmado");
-        
+        System.out.println("Texto modificado");
+        ImprimirFlorPrincipito(florMia);
+
 
         System.out.println("Texto original");
-        System.out.println("El principito tenía una flor que amaba mucho. \nCuidaba de ella todos los días, la regaba y le quitaba las orugas. \nLa flor, aunque un poco " + florTexto.getActitud() +", era muy " + florTexto.getApariencia() +" y agradecía al principito por su dedicación. \nUn dia, el principito decidió explorar otros planetas y, aunque no quería dejar sola a su flor, sabía que debía continuar su viaje para aprender más sobre el universo.");
-        System.out.println("");
-        System.out.println("");
-
-        System.out.println("Texto modificado");
-        System.out.println("El principito tenía una flor que amaba mucho. \nCuidaba de ella todos los días, la regaba y le quitaba las orugas. \nLa flor, aunque un poco " + florMia.getActitud() + ", era muy " + florMia.getApariencia() +" y agradecía al principito por su dedicación. \nUn dia, el principito decidió explorar otros planetas y, aunque no quería dejar sola a su flor, sabía que debía continuar su viaje para aprender más sobre el universo.");
-
-        
+        ImprimirFlorPrincipito(principito.getFlor());
 
     }
+
+
+    public static void ImprimirFlorPrincipito (Flor flor) {
+        System.out.println("El principito tenía una flor que amaba mucho. \nCuidaba de ella todos los días, la regaba y le quitaba las orugas. \nLa flor, aunque un poco " + flor.getActitud() + ", era muy " + flor.getApariencia() +" y agradecía al principito por su dedicación. \nUn dia, el principito decidió explorar otros planetas y, aunque no quería dejar sola a su flor, sabía que debía continuar su viaje para aprender más sobre el universo.\n\n\n");
+    }
+    
 }
