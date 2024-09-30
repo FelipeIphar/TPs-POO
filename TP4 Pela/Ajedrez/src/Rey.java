@@ -1,5 +1,5 @@
 public class Rey extends Pieza {
     public Rey(String color) {
-        super(color, "Cualquier dirección", 1);
+        super("Rey", color, "Postrero, Tenue");
     }
 }

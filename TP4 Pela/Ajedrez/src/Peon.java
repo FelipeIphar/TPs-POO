@@ -1,5 +1,5 @@
 public class Peon extends Pieza {
     public Peon(String color) {
-        super(color, "Frontal", 1);
+        super("Peon", color, "Agresor, Ladino");
     }
 }
