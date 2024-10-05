@@ -2,7 +2,7 @@ public class Ajedrez {
     public static void main(String[] args) {
         Tablero tablero = new Tablero();
 
-        // Colocación de piezas blancas
+        // Colocacion de piezas blancas
         tablero.colocarPieza(new Torre("blanco"), 0, 0);
         tablero.colocarPieza(new Caballo("blanco"), 0, 1);
         tablero.colocarPieza(new Alfil("blanco"), 0, 2);
@@ -15,7 +15,7 @@ public class Ajedrez {
             tablero.colocarPieza(new Peon("blanco"), 1, i);
         }
 
-        // Colocación de piezas negras
+        // Colocacion de piezas negras
         tablero.colocarPieza(new Torre("negro"), 7, 0);
         tablero.colocarPieza(new Caballo("negro"), 7, 1);
         tablero.colocarPieza(new Alfil("negro"), 7, 2);
