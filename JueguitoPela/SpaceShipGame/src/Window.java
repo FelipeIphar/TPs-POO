@@ -1,5 +1,3 @@
-package main; 
-import java.nio.Buffer;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Graphics;
