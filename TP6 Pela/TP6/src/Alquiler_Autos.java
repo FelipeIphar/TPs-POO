@@ -30,16 +30,16 @@ public class Alquiler_Autos {
 
             switch (opcion) {
                 case 1:
-                    vehiculo = new Auto(dias);
+                    vehiculo = new Auto(patente, dias);
                     break;
                 case 2:
-                    vehiculo = new Minibus(dias);
+                    vehiculo = new Minibus(patente, dias);
                     break;
                 case 3:
-                    vehiculo = new Furgoneta(dias);
+                    vehiculo = new Furgoneta(patente, dias);
                     break;
                 case 4:
-                    vehiculo = new Camion(dias);
+                    vehiculo = new Camion(patente, dias);
                     break;
 
                 default: System.out.println("Opcion incorrecta, por favor intente de nuevo.");
