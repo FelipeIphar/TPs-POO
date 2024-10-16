@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Vehiculo {
     protected String patente;
-    protected int dias;
+    protected int dias; //sacar
     protected static final int precio_base = 2000;
 
     public Vehiculo(){

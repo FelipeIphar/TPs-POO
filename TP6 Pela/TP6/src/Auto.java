@@ -13,6 +13,6 @@ public class Auto extends Vehiculo_Pasajeros{
 
     @Override
     public int calcularPrecioTotal() {
-        return super.calcularPrecioTotal()+(precio_x_plazas_x_dias*plazas*dias);
+        return super.calcularPrecioTotal()+(precio_x_plazas_x_dias*(plazas+dias));
     }
 }
