@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class Vehiculo {
     protected String patente;
@@ -16,7 +15,7 @@ public class Vehiculo {
     }
         
     public String getPatente(){
-        return = patente;
+        return patente;
     }
 
     public void setPatente(String patente){

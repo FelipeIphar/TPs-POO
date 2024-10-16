@@ -4,10 +4,11 @@ public class Auto extends Vehiculo_Pasajeros{
 
     public Auto() {
         super();
+        this.plazas = 5;
     }
 
-    public Auto(String patente, int dias) {
-        super(patente, dias);
+    public Auto(int dias) {
+        super(dias, 5);
     }
 
     @Override
