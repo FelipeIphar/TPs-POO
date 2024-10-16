@@ -1,4 +1,4 @@
-public class Main {
+public class Alquiler_Autos {
     public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
