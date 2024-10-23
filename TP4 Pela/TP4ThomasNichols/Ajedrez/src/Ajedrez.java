@@ -2,7 +2,7 @@ public class Ajedrez {
     public static void main(String[] args) {
         Tablero tablero = new Tablero();
 
-        // Colocacion de piezas blancas 
+        // Colocación de piezas blancas usando representaciones en texto
         tablero.colocarElemento("Torre blanco", 0, 0);
         tablero.colocarElemento("Caballo blanco", 0, 1);
         tablero.colocarElemento("Alfil blanco", 0, 2);
@@ -15,7 +15,7 @@ public class Ajedrez {
             tablero.colocarElemento("Peón blanco", 1, i);
         }
 
-        // Colocacion de piezas negras 
+        // Colocación de piezas negras usando representaciones en texto
         tablero.colocarElemento("Torre negro", 7, 0);
         tablero.colocarElemento("Caballo negro", 7, 1);
         tablero.colocarElemento("Alfil negro", 7, 2);
@@ -36,8 +36,8 @@ public class Ajedrez {
         System.out.println("\nPiezas negras en el tablero:");
         tablero.imprimirElementosPorTipo("negro");
 
-        // Imprimir un tablero de ajedrez 
+        // Imprimir un tablero de ajedrez vacío con colores marrón y blanco
         System.out.println("\nTablero de ajedrez vacío:");
-        tablero.imprimirTableroVacio(); 
+        tablero.imprimirTableroVacio();  // Aquí es donde se invoca el método
     }
 }

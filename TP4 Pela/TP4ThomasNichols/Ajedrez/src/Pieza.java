@@ -1,17 +1,17 @@
 public class Pieza {
     private String nombre;
     private String color;  // "blanco" o "negro"
-    private String comportamiento; // atributo    <<<--- MIRAR --->>>
-    
+    private String movimiento;  
+
     // Constructor vacio
     public Pieza() {
     }
-    
+
     // Constructor con parametros
-    public Pieza(String nombre, String color, String comportamiento) {
+    public Pieza(String nombre, String color, String movimiento) {
         this.nombre = nombre;
         this.color = color;
-        this.comportamiento = comportamiento;
+        this.movimiento = movimiento;  
     }
 
     // Metodos get y set
@@ -31,21 +31,21 @@ public class Pieza {
         this.color = color;
     }
 
-    public String getComportamiento() {
-        return comportamiento;
+    public String getMovimiento() {
+        return movimiento;  
     }
 
-    public void setComportamiento(String comportamiento) {
-        this.comportamiento = comportamiento;
+    public void setMovimiento(String movimiento) {
+        this.movimiento = movimiento;
     }
 
-    //Imprimimos los atributos en pantalla
+    // Imprimimos los atributos en pantalla
     @Override
     public String toString() {
         return "Pieza{" +
                 "nombre='" + nombre + '\'' +
                 ", color='" + color + '\'' +
-                ", comportamiento='" + comportamiento + '\'' +
+                ", movimiento='" + movimiento + '\'' +
                 '}';
     }
 }
