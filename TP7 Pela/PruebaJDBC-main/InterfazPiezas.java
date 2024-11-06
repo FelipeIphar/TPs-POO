@@ -1,9 +1,9 @@
-public class App {
+public class InterfazPiezas {
     public static void main(String[] args) {
         AccesoDatos accesoDatos = new AccesoDatos();
         accesoDatos.crearConexion();
 
-        // Puedes añadir más lógica aquí según sea necesario
+        // Verifica si la conexión fue exitosa antes de intentar usarla
         if (accesoDatos.getConexion() != null) {
             accesoDatos.mostrarPiezasBD();
         } else {
