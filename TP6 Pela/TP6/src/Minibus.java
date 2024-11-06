@@ -4,10 +4,11 @@ public class Minibus extends Vehiculo_Pasajeros{
 
     public Minibus() {
         super();
+        this.plazas = 19;
     }
 
-    public Minibus(String patente, int dias) {
-        super(patente, dias);
+    public Minibus(int dias) {
+        super(dias,19);
     }
 
     @Override

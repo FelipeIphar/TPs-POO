@@ -1,9 +1,8 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class Vehiculo {
     protected String patente;
-    protected int dias;
+    protected int dias; 
     protected static final int precio_base = 2000;
 
     public Vehiculo(){
@@ -16,7 +15,7 @@ public class Vehiculo {
     }
         
     public String getPatente(){
-        return = patente;
+        return patente;
     }
 
     public void setPatente(String patente){

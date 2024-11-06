@@ -1,4 +1,4 @@
-public class Furgoneta extends Vehiculo_carga {
+public class Furgoneta extends Vehiculo_Carga {
     private static final int precio_x_tonelada = 800;
 
     public Furgoneta(){
